@@ -7,9 +7,9 @@
 
 #define GPIO_BOTAO_A    5
 #define GPIO_BOTAO_B    6
-#define GPIO_LED_R      11
-#define GPIO_LED_G      12
-#define GPIO_LED_B      13
+#define GPIO_LED_R      13
+#define GPIO_LED_G      11
+#define GPIO_LED_B      12
 #define GPIO_WS2812     7
 #define NUM_LEDS        25
 
