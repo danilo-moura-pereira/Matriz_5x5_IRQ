@@ -12,9 +12,9 @@ if (EXISTS ${picoVscode})
     include(${picoVscode})
 endif()
 # ====================================================================================
-set(PICO_BOARD pico CACHE STRING "Board type")
-
 cmake_minimum_required(VERSION 3.13)
+
+set(PICO_BOARD pico_w CACHE STRING "Board type")
 
 include(pico_sdk_import.cmake)
 
@@ -34,7 +34,8 @@ include_directories(
 )
 
 # Adiciona o arquivo PIO
-pico_generate_pio_header(Matriz_5x5_IRQ ${CMAKE_CURRENT_LIST_DIR}/pio_matrix.pio)
+file(MAKE_DIRECTORY ${CMAKE_CURRENT_LIST_DIR}/generated)
+pico_generate_pio_header(Matriz_5x5_IRQ ${CMAKE_CURRENT_LIST_DIR}/ws2812.pio)
 
 
 pico_enable_stdio_usb(Matriz_5x5_IRQ 1)
