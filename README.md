@@ -15,4 +15,4 @@ domínio de diferentes tipos de controle.
 4. Organização do código: o código está bem estruturado e comentado para facilitar o
 entendimento.
 
-Link do vídeo explicativo: https://youtu.be/RnKNnkdlqXg
+Link do vídeo explicativo: https://youtu.be/_XXT87hjtJc
